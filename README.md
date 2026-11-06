@@ -95,39 +95,35 @@ Strategy swaps one algorithm of one object (for example "how to pick a route") a
 
 ```
 SECURITY AUDIT
-  [CRITICAL] Hardcoded credentials in PaymentService.java
-  [WARNING] High-risk source file: UserService.java
-  [CRITICAL] Plain-text password in application.properties
-  [WARNING] Debug mode enabled in application.properties
-  [CRITICAL] Vulnerable dependency jackson-databind in pom.xml
-  Critical: 3, warnings: 2, security score: 5/100
- 
+[CRITICAL] Hardcoded credentials in PaymentService.java
+[WARNING] High-risk source file: UserService.java
+[CRITICAL] Plain-text password in application.properties
+[WARNING] Debug mode enabled in application.properties
+[CRITICAL] Vulnerable dependency jackson-databind in pom.xml
+Critical: 3, warnings: 2, security score: 5/100
+
 PROJECT STATISTICS
-  Total files: 5 (source 2, test 1)
-  Lines of source code: 500
-  Lines of test code: 120
-  Number of tests: 8
-  Dependencies: 5
-  Average complexity: 9.0
-  Test/source ratio: 0.24
- 
+Total files: 5 (source 2, test 1)
+Lines of source code: 500
+Lines of test code: 120
+Number of tests: 8
+Dependencies: 5
+Average complexity: 9.0
+Test/source ratio: 0.24
+
 QUALITY GATE
-  Security: FAIL
-  Complexity: PASS
-  Tests: FAIL
-  FINAL RESULT: FAILED
- 
+Security: FAIL
+Complexity: PASS
+Tests: FAIL
+FINAL RESULT: FAILED
+
 COMPLIANCE CHECK
-  VIOLATION: Exposed credentials in PaymentService.java
-  VIOLATION: Exposed credentials in application.properties
-  VIOLATION: Prohibited dependency log4j in pom.xml
-  VIOLATION: Dependency gson has no version in pom.xml
-  VIOLATION: Production file UserService.java has no test
-  Result: 5 violation(s)
- 
-TECHNICAL DEBT
-  PaymentService.java: 120 min
-  Total estimated debt: 120 min (2.0 hours)
+VIOLATION: Exposed credentials in PaymentService.java
+VIOLATION: Exposed credentials in application.properties
+VIOLATION: Prohibited dependency log4j in pom.xml
+VIOLATION: Dependency gson has no version in pom.xml
+VIOLATION: Production file UserService.java has no test
+Result: 5 violation(s)
 ```
 
 ## Test results
